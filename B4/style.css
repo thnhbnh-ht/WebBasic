@@ -25,6 +25,7 @@ a{
     font-size: 17px;
     font-weight: 900;
     border: none;
+    text-decoration: none;
 }
 a:hover{
     background-color: #778899;
