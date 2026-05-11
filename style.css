@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(35, 37, 41);
+}
+.container{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 100px;
+    height: 60px;
+    color: rgb(98, 152, 223);
+    font-size: 17px;
+    font-weight: 900;
+    border: none;
+}
+a:hover{
+    background-color: #778899;
+    color: white;
+}
+a:focus{
+
+}
+.content{
+    display: inline-block;
+    text-align: left;
+}
+h1{
+    align-self: flex-start;
+    text-align: left;
+    color: rgb(71, 71, 71);
+}
+.image{
+    display: flex;
+    position: relative;
+}
+img{
+    width: 350px;
+    height: 200px;
+    margin-right: 20px;
+    transition: 0.5s;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.pic{
+    position: relative;
+}
+h2{
+    position: relative;
+    color: white;
+    margin-bottom: 5px;
+}
+p{
+    margin-top: 0;
+    font-size: 12px;
+    opacity: 0;
+}
+.text{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.image:hover img{
+    transform: translateX(20px);
+    opacity: 1;
+}
+.image:hover .text{
+    transform: translateY(-40px);
+}
+.image:hover p{
+    opacity: 1;
+}
