@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(35, 37, 41);
+    margin: 20px;
+    background-color: rgb(35, 37, 41); 
 }
 .container{
     max-width: 1280px;
@@ -31,9 +32,6 @@ a:hover{
     background-color: #778899;
     color: white;
 }
-a:focus{
-
-}
 .content{
     display: inline-block;
     text-align: left;
@@ -48,22 +46,31 @@ h1{
     position: relative;
 }
 img{
-    width: 350px;
-    height: 200px;
-    margin-right: 20px;
+    width: 400px;
+    height: 350px;
     transition: 0.5s;
     object-fit: cover;
     opacity: 0.5;
+    width: calc(100% + 30px);
+    transform: translateX(-20px);
+    transition: 0.5s;
 }
 .pic{
     position: relative;
+    overflow: hidden;
+    margin-right: 20px;
 }
 h2{
     position: relative;
     color: white;
     margin-bottom: 5px;
+    font-weight: 100;
+}
+span{
+    font-weight: 1000;
 }
 p{
+    color: white;
     margin-top: 0;
     font-size: 12px;
     opacity: 0;
@@ -72,16 +79,17 @@ p{
     position: absolute;
     bottom: 0;
     left: 20px;
-    margin: 10px;
+    margin: 50px;
     transition: 0.5s;
+    transform: translateY(40px);
 }
-.image:hover img{
-    transform: translateX(20px);
+.pic:hover img{
+    transform: translateX(0);
     opacity: 1;
 }
-.image:hover .text{
-    transform: translateY(-40px);
+.pic:hover .text{
+    transform: translateY(0);
 }
-.image:hover p{
+.pic:hover p{
     opacity: 1;
 }
