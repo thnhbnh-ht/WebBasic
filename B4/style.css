@@ -44,7 +44,7 @@ h1{
 .image{
     display: flex;
     position: relative;
-}
+} 
 img{
     width: 400px;
     height: 350px;
