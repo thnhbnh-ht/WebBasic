@@ -45,9 +45,6 @@
     border-radius: 100%; 
     justify-content: flex-end;
 }
-.gt{
-    display: flex;
-}
 .picture{
     display: flex;
     width: 500px;
@@ -186,6 +183,13 @@ p{
     .picture{
         width: 450px;
         height: 500px;
+        position: relative;
+        margin-bottom: 350px;
+    }
+    .text{
+        position: absolute;
+        top: 500px;
+        margin-left: 0;
     }
     .box{
         flex-wrap: wrap;
