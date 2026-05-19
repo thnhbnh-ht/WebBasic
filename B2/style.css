@@ -7,14 +7,14 @@
 
 .container {
     max-width: 1280px;
-    width: 100%;
-    padding: 50px;
+    width: 90%;
     margin: auto;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .J-icon{
@@ -32,7 +32,6 @@
 .mini-icon{
     display: block;
     text-align: right;
-    margin-top: -50px;
 }
 .mini-icon i{
     font-size: 15px;
@@ -46,12 +45,20 @@
     border-radius: 100%; 
     justify-content: flex-end;
 }
+.gt{
+    display: flex;
+}
 .picture{
     display: flex;
-    flex-wrap: wrap;
+    width: 500px;
+    height: 600px;
 }
 h4 {
     margin-bottom: 50px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
 }
 .text{
     display: inline-block;
@@ -74,6 +81,10 @@ h4 {
 .item{
     margin-top: 40px;
     text-align: left;
+    flex: 1;
+}
+p{
+    font-size: 25px;
 }
 .item h3 {
     display: inline-block;
@@ -81,6 +92,7 @@ h4 {
     border-bottom: 3px solid #ff4d4d;
     object-fit: cover;
     justify-content: space-around;
+
 }
 .button{
     text-align: center;
@@ -118,4 +130,68 @@ h4 {
 .abc{
     padding-top: 15px;
     padding-bottom: 15px;
+}
+@media(max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+}
+@media(max-width: 992px){
+    .picture {
+        width: 400px;
+        height: 450px;
+    }
+    .text{
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    h4{
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    h1{
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+@media(max-width: 768px){
+    .picture{
+        width: 200px;
+        height: 300px;
+    }
+    .JS{
+        opacity: 0;
+    }
+    .text{
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .number{
+        font-size: 30px;
+    }
+    .itemm{
+        margin-top: 10px;
+    }
+    h4{
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+@media(max-width: 576px){
+    .picture{
+        width: 450px;
+        height: 500px;
+    }
+    .box{
+        flex-wrap: wrap;
+    }
+    .item{
+        flex: auto;
+    }
+
 }
