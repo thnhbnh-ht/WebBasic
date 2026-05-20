@@ -29,6 +29,9 @@
     text-align: center; 
     margin-right: 20px;
 }
+.JS{
+    display: none;
+}
 .mini-icon{
     display: block;
     text-align: right;
