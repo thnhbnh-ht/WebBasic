@@ -181,8 +181,8 @@ p{
 }
 @media(max-width: 576px){
     .picture{
-        width: 450px;
-        height: 500px;
+        width: 380px;
+        height: 480px;
         position: relative;
         margin-bottom: 350px;
     }
