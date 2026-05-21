@@ -50,12 +50,11 @@
 }
 .picture{
     display: flex;
-    width: 500px;
-    height: 600px;
 }
 img{
     width: 100%;
     height: auto;
+    max-width: 500px;
 }
 h4 {
     margin-bottom: 50px;
@@ -148,9 +147,6 @@ p{
 @media(max-width: 992px){
     .picture {
         width: 40%;
-        height: auto;
-        /* width: 400px;
-        height: 450px; */
     }
     .text{
         margin-top: 10px;
@@ -167,10 +163,7 @@ p{
 }
 @media(max-width: 768px){
     .picture{
-        width: 30%;
-        height: auto;
-        /* width: 200px;
-        height: 300px; */
+        width: 35%;
     }
     .JS{
         opacity: 0;
@@ -198,9 +191,6 @@ p{
 @media(max-width: 576px){
     .picture{
         width: 100%;
-        height: auto;
-        /* width: 500px;
-        height: 590px; */
         position: relative;
         margin-bottom: 350px;
     }
