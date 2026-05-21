@@ -114,6 +114,11 @@ p{
     text-align: center;
     align-content: center;
 }
+.button1:hover{
+    background-color: #ff4d4d;
+    color: white;
+    transition: 0.5s;
+}
 .button2{
     display: inline-block;
     border: 1px solid rgb(237, 231, 231);
