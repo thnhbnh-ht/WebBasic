@@ -6,6 +6,6 @@ button.addEventListener('click', function(event){
     let height = document.getElementById("h").value.trim();
     let color = document.getElementById("mau").value.trim();
     color_res.style.backgroundColor = color;
-    color_res.style.width = width;
-    color_res.style.height = height;
+    color_res.style.width = width + "px";
+    color_res.style.height = height + "px";
 })
