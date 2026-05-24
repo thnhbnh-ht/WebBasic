@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    width: auto;
+    height: 20px;
+    background-color: beige;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+button{
+    width: 80px;
+    height: 80px;
+    background-color: beige;
+}
+.color{
+    margin: 50px;
+}
