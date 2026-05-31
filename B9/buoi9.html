@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="alert('Button clicked!')">Click</button>
+    <button id="myButton">Click me</button> -->
+    <div>A</div>
+    <div>B
+        <div>B-A</div>
+    </div>
+    <p>paragraph</p>
+    <div>C</div>
+    <script>
+    //click, input, change, mouseover, mouseout
+        // const button = document.getElementById("myButton");
+        //selector: nth-of-type(thứ tự)
+        let div2 = document.querySelector('div div:nth-child(1)'); //lấy ptu t2 -> B, check có phải là div không, nếu có thì gán div2 = thẻ đó, không thì trả về NULL -> lấy thẻ tại vị trí trước mới ktra
+        let div3 = document.querySelector('div:nth-of-type(3)'); //lấy thẻ div thứ 3(chỉ ktra thẻ div) gán vô div3 -> kiểm tra có phải thẻ đó không trước rồi mới ktra
+        // button.addEventListener('click', function(){
+        //     alert('Button was clicked!');
+        // });
+        div2.style.color = 'red';
+        // div3.style.color = 'blue';
+    </script>
+</body>
+</html>

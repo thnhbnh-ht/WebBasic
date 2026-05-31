@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.J-icon{
+    display: inline-block; 
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 4px;    
+    align-content: center;
+    text-align: center; 
+    margin-right: 20px;
+}
+.JS{
+    display: none;
+}
+.mini-icon{
+    display: block;
+    text-align: right;
+}
+.mini-icon i{
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: 30px;
+    background-color: #ff4d4d;
+    text-align: center;
+    align-content: center;
+    border-radius: 100%; 
+    justify-content: flex-end;
+}
+.picture{
+    display: flex;
+}
+img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+h4 {
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.text{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.intro{
+    display: flex;
+}
+.itemm{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.number{
+    color: #ff4d4d;
+    font-size: 40px;
+    font-weight: 600;
+}
+.item{
+    margin-top: 40px;
+    text-align: left;
+    flex: 1;
+}
+p{
+    font-size: 25px;
+}
+.item h3 {
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ff4d4d;
+    object-fit: cover;
+    justify-content: space-around;
+
+}
+.button{
+    text-align: center;
+    margin: 50px;
+}
+.button1{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    color:#ff4d4d;
+    border: 2px solid #ff4d4d;
+    border-radius: 50px;
+    text-align: center;
+    align-content: center;
+}
+.button1:hover{
+    background-color: #ff4d4d;
+    color: white;
+    transition: 0.5s;
+}
+.button2{
+    display: inline-block;
+    border: 1px solid rgb(237, 231, 231);
+    border-radius: 100px;
+    text-align: center;
+    align-content: center;
+    margin: 5px;
+    padding: 10px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.info li{
+    padding-left: 10px;
+    margin: 15px;
+}
+.abc{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.add-skill{
+    display: flex;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    gap: 10px;
+}
