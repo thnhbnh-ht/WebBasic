@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(55, 53, 53);
+            margin: 0;
+        }
+        button{
+            display: flex;
+            justify-content: end;
+            position: relative;
+            background: none;
+            color: white;
+            border: none;
+            font-size: 20px;
+            margin: 20px;
+        }
+        .menu{
+            position: absolute;
+            top: 50px;
+            padding: 30px 50px;
+            margin-top: 20px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            opacity: 0;
+            transition: 2s;
+            transform: translateY(-350px);
+        }
+        .item{
+            opacity: 0;
+            font-size: 20px;
+            transition: 1s;
+        }
+        .item1{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <button>Menu</button>
+    <div class="menu">
+        <div class="item">Cửa Hàng</div>
+        <div class="item">Mac</div>
+        <div class="item">iPad</div>
+        <div class="item">iPhone</div>
+        <div class="item">Watch</div>
+        <div class="item">AirPods</div>
+        <div class="item">TV & Nhà</div>
+        <div class="item">Giải Trí</div>
+        <div class="item">Phụ Kiện</div>
+        <div class="item">Hỗ Trợ</div>
+    </div>
+    <script>
+        let Menu = document.querySelectorAll("div");
+        let nut = document.querySelector("button");
+        let click = false;
+        nut.addEventListener('click', function(){
+            if (!click){
+                Menu.forEach(div=> {
+                    div.classList.add("item1");
+                });
+                click = true;
+            }
+            else {
+                Menu.forEach(div=> {
+                    div.classList.remove("item1");
+                });
+                click = false;
+            }
+        });
+    </script>
+</body>
+</html>
