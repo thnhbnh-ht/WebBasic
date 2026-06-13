@@ -64,7 +64,7 @@ h1{
     font-size: 40px;
     font-weight: 700;
 }
-.text{
+#text{
     display: inline-block;
     margin-top: 20px;
     margin-left: 100px;
