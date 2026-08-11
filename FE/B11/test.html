@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 109px;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+            margin: 20px 0 20px 20px;
+            font-size: 16px;
+            padding: 20px;
+            border-radius: 30px;
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+        }
+        .pokemon_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 340px;
+            height: 420px;
+            .image{
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+            }
+            .id{
+                width: 100%;
+                height: 10%;
+            }
+            .name{
+                width: 100%;
+                height: 10%;
+            }
+            
+            .type{
+                width: 100%;
+                height: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>POKEMON API</h2>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Nhập tên pokemon">
+    </div>
+    <div class="pokemon_list">
+    </div>
+
+    <script>
+        function fetchPromise(URL) {
+            return new Promise(function (resolve) {
+                fetch(URL)
+                    .then(function (response) {
+                        const promise = response.json()
+                        resolve(promise);
+                    })
+                    .catch(function (error) {
+                        console.log("error")
+                    })
+            })
+        }
+
+        async function main() {
+            let pokemons = [];
+            const data = await fetchPromise("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=898");
+            pokemons = data.results;
+            console.log(pokemons[2].name);
+            const pokemonPromise = pokemons.map(pokemon => fetchPromise(pokemon.url));
+            const pokemonElements = await Promise.all(pokemonPromise);
+            const pokemonList = document.querySelector(".pokemon_list");
+
+            const button = document.querySelector(".button");
+            let size = 20;
+
+            function renderPokemonList(data, size) {
+                let img = "";
+                pokemonList.innerHTML = "";
+                for (let i = 0; i < size; i++) {
+                    img += `<div class="pokemon_item">
+                                <div class="id">#${i + 1}</div>
+                                <div class="image">
+                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i + 1}.png" alt="${data[i].name}">
+                                </div>
+                                <div class="name">
+                                    <p>${data[i].name}</p>
+                                </div>`
+
+                    for (let j = 0; j < data[i].types.length; j++) {
+                        img += `<div class="type">${data[i].types[j].type.name}</div>`
+                    }
+                    img += `</div>`
+                }
+                pokemonList.innerHTML = img;
+            }
+
+            renderPokemonList(pokemonElements, size);
+        }
+
+        main();
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        button{
+            color: black;
+            background-color: aqua;
+        }
+        .dark{
+            color: white;
+            background-color: rgb(174, 170, 165);
+        }
+    </style>
+</head>
+<body>
+    <div>thẻ 1</div>
+    <div>thẻ 2</div>
+    <div>thẻ 3</div>
+    <button>Click me</button>
+    <script>
+        let divs = document.querySelectorAll("div");
+        let button = document.querySelector("button");
+        button.addEventListener("click", function(){
+            button.classList.toggle("dark");
+            document.body.classList.toggle("dark");
+        })
+        divs.forEach(
+            function(div){
+                // div.addEventListener("click", function(){
+                //     // thêm class blue vào thẻ div
+                // div.classList.add("blue");
+                // });
+                // div.addEventListener("click", function(){
+                //     // bỏ blue ra khỏi thẻ div
+                // div.classList.remove("blue");
+                // });
+                div.addEventListener("click", function(){
+                    // chuyển đổi class blue trên thẻ div
+                div.classList.toggle("blue");
+                });
+                div.addEventListener("click", function(){
+                div.classList.toggle("blue");
+                });
+            
+
+            }
+        );
+    </script>
+</body>
+</html>
