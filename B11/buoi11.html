@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lí bất đồng bộ</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        // lấy data
+        const data = fetch("link");
+        console.log(data);
+        // thay vi await moi cai 1 lan thi minh await 1 lan nhieu cai
+        const result = await promise.all([
+            fetch("link"),
+            fetch("link"),
+            fetch("link")
+        ])
+        const login = ()=>{
+            return new Promise ((resolve, reject)=>{
+                if (resolve){
+                    resolve("Yes")
+                }
+                else {
+                    reject("No")
+                }
+            })
+        }
+
+        const promise = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve("done")
+            },1000)
+        })
+        promise
+        //thanh cong thi chay trong ni
+        .then((data)=>{
+            console.log(data)
+        })
+        //xu li that bai thi show trong ni
+        .catch((erro)=>{
+            console.log(erro)
+        })
+        // neu khong xu li promise thi se xu li loi goi ham va
+
+        login()
+        // xac dinh phan tu la gi sau do thuc hien ham trong do
+        // tra ve user thi thuc hien cai ni, tuong tu if else
+        .then((user)=>{
+            console.log("get user")
+        })
+        .then((post)=>{
+            console.log("get post")
+        })
+        .catch((erro)=>{
+            console.log(erro)
+        })
+        async function login() {
+            // chay song song
+            try{
+                // co 3 trang thai cua promise: pending, fulfilled, rejected
+                // neu khong co await thi tra ve pending, nen khong tra ve user thi xong the get user
+                // co thi se dung tat ca cac ham o duoi lai de thuc hien ham do xong moi thuc hien cac ham o duoi
+                const user = await login() //tra ve promise, neu khong doi de tien trinh thuc hien
+                console.log("get user")
+                const post = await getpost(user.id)
+                console.log("get post")
+            }
+            catch(erro){
+                console.log(erro)
+            }
+        }
+        function naucom(callback){
+            console.log("dang nau com");
+            callback()
+        }
+        //callback cua naucom la an com
+        naucom(
+            ()=>{console.log("an com")}
+        )
+        function ancom(){
+            console.log("an com")
+        }
+        naucom(ancom)
+        login(()=>{
+            console.log("dang nhap")
+            getuser(()=>{
+                console.log("Lay thong tin")
+                getpost(()=>{
+                    console.log("post bai thanh cong")
+                    getcmt(()=>{
+                        console.log("lay cmt")
+                    })
+                })
+            })
+        })
+        console.log(1);
+        console.log(2);
+        // luồng vẫn chạy từ trên xuống,tới đây trình duyệt sẽ làm công việc trong này và tiếp tục ở dưới sau 1000ms thì thực hiện hàm này
+        setTimeout(() => {
+            console.log("23");
+        }, 1000);
+        console.log(3);
+        console.log(4);
+    </script>
+</body>
+</html>

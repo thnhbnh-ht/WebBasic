@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN Buổi 9</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f7fbc5dbb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="left-icon">
+                <span class="J-icon">
+                    <b>J</b>
+                </span>
+                <span class ="JS" style="font-size: 20px;">
+                    JASON STROFF
+                </span>
+            </span>
+            <span class="mini-icon">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-stack-overflow"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </span>
+        </div>
+        <div class="picture">
+            <img src="pic.jpg"> 
+        <div class="text">
+            <h4>HI THERE</h4>
+            <h1>I’m Jason Stroff<br>UI/UX DESIGNER +<br>DEVELOPER based in<br>Florida.</h1>
+            <br> 
+            <ul class="intro">
+                <li class="itemm">
+                    <b class="number">6+</b>
+                    <p>Experience</p>
+                </li>
+                <li class="itemm">
+                    <b class="number">89</b>
+                    <p>Projects</p>
+                </li>
+                <li class="itemm">
+                    <b class="number">52</b>
+                    <p>Happy Clients</p>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="item">
+            <h3>ABOUT ME</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ante a porta blandit. Quisque velit tortor, ultricies in quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis justo quis, bibendum tellus. Integer bibendum eget dolor nec venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan vulputate. Curabitur et vehicula nisl, eu congue dolor. Vivamus nec hendrerit mi Nulla consequat tempor.</p>
+        </div>
+        <div class="button"> 
+            <p class="button1">DOWNLOAD RESUME</p>
+        </div>
+        <div class="box">
+            <div class="item" id="it1">
+                <h3>CORE SKILLS</h3>
+                <br>
+                <div class="button2">JavaScript</div>
+                <div class="button2">Node.js</div>
+                <div class="button2">Express.js</div>
+                <div class="button2">MongoDB</div>
+                <div class="button2">Vue.js</div>
+                <div class="button2">React</div>
+                <div class="button2">Sequelize</div>
+                <div class="button2">Github</div>
+                <div class="button2">HTML</div>
+            </div>
+            <div class="item" id="it2">
+                <h3>OTHER SKILLS</h3>
+                <br>
+                <div class="button2">Storyblok</div>
+                <div class="button2">PWAs</div>
+                <div class="button2">Responsive Web Design</div>
+                <div class="button2">React</div>
+                <div class="button2">Vuetify</div>
+            </div>
+        </div>
+        <div class="add-skill">
+            <input type="text" id="inp1" placeholder="Add Core skills">
+            <button id="Button1">Add</button>
+        </div>
+        <div class="add-skill">
+            <input type="text" id="inp2" placeholder="Add Orther skills">
+            <button id="Button2">Add</button>
+        </div>
+        <div class="item">
+            <h3>WORK EXPERIENCE</h3>
+            <div class="box">
+                <div class="info">
+                    <b class="abc">2019 - Present</b>
+                    <p class="abc">Matrix Media Inc</p>
+                    <b class="abc">Full Stack developer</b>
+                    <p class="abc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+                    <ul>
+                        <li >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <b class="abc">2018 - 2019</b>
+                    <p class="abc">Lexind</p>
+                    <b class="abc">Senior app developer</b>
+                    <p class="abc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let but1 = document.getElementById("Button1");
+        let but2 = document.getElementById("Button2");
+        let item1 = document.getElementById("it1");
+        let item2 = document.getElementById("it2");
+
+        but1.addEventListener('click', function(){
+            let Cskill = document.getElementById("inp1").value.trim();
+            item1.innerHTML += `<div class="button2"> ${Cskill} </div>`;
+        });
+        but2.addEventListener('click', function(){
+            let Oskill = document.getElementById("inp2").value.trim();
+            item2.innerHTML += `<div class="button2"> ${Oskill} </div>`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="alert('hi')">click me</button> -->
+    <!-- <script>
+        console.log("aaaaaaaaa");
+    </script> -->
+    <!-- <script src="./style.js"></script> -->
+    <div id="div1">aaaaaaa</div>
+    <div class="box1">aaaaaaa</div>
+    <div class="box1">bbbbbbbbbb</div>
+    <div class="box1">ccccccccc</div>
+    <button>submit</button>
+    <script> //DOM ->tao logic 
+    //tro den phan tu nhung chi lay cai dau tien
+        let title1 = document.getElementById("div1"); //tìm bằng id -> trả về phàn tử duy nhất có id
+        let box1 = document.querySelector(".box1"); // tìm bằng css selector -> trả về phần tử đầu tiên của selector 
+        let box1s = document.querySelectorAll(".box1");
+        let button = document.querySelector("button");
+        //click, input, change, mouseover, mouseout
+        button.addEventListener('click', function(){ //khi nhan vao thi thuc hien hanh dong trong ham nay
+            alert("chao"); //hien ra tb
+            let a = box1.value;
+            console.log(a);
+        })
+        //thay doi thuoc tinh
+        title1.innerText = "Hiiiiiiiiiiiiii";  //chi la text
+        title1.innerHTML = "<h1> Hiiiiiii </h1>"; //ghi vao the html
+        box1.style.color = "red";
+    </script>
+
+</body>
+</html>

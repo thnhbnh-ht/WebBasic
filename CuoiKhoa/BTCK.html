@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rạng Đông - Dẫn đầu Cung cấp Hệ sinh thái LED 4.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar" id="mainNavbar">
+            <img src="https://rangdong.com.vn/themes/rangdong/images/logonew.png" alt="logo rạng đông">
+            <div class="item" title="Dự án">
+                Dự án
+                <span class="menu-toggle"></span>
+                <div class="menu">
+                    <div class="col">
+                        <a href="#" class="item1" title="Giải pháp & Dịch vụ">Giải pháp & Dịch vụ</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Smarty City">Smarty indoor</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Nhà ở dân cư" href="https://rangdong.com.vn/nha-thong-minh-rang-dong.html" onclick="setMenuClicked(1);">Nhà ở dân cư</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Văn phòng công sở" href="https://rangdong.com.vn/giai-phap-chieu-sang-van-phong-thong-minh.html" onclick="setMenuClicked(1);">Văn phòng công sở</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Trường học" href="https://rangdong.com.vn/giai-phap-chieu-sang-hoc-duong.html" onclick="setMenuClicked(1);">Trường học</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công nghiệp" href="https://rangdong.com.vn/giai-phap-chieu-sang-nha-may-cong-nghiep.html" onclick="setMenuClicked(1);">Công nghiệp</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Nhà ở Xã hội" href="https://rangdong.com.vn/nha-o-xa-hoi-gt251.html" onclick="setMenuClicked(1);">Nhà ở Xã hội</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Trung tâm thương mại" href="https://rangdong.com.vn/giai-phap-chieu-sang-trung-tam-thuong-mai.html" onclick="setMenuClicked(1);">Trung tâm thương mại</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Smarty City">Smarty City</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đường phố thông minh" href="https://rangdong.com.vn/giai-phap-chieu-sang-duong-pho-thong-minh.html" onclick="setMenuClicked(1);">Đường phố thông minh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Chiếu sáng cảnh quan" href="https://rangdong.com.vn/giai-phap-chieu-sang-canh-quan-gt206.html" onclick="setMenuClicked(1);">Chiếu sáng cảnh quan</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Nông nghiệp thông minh">Nông nghiệp thông minh</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Cây thanh long" href="https://rangdong.com.vn/giai-phap-chieu-sang-thanh-long.html" onclick="setMenuClicked(1);">Cây thanh long</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Nuôi cấy mô" href="https://rangdong.com.vn/ld-noi-cay-mo.html" onclick="setMenuClicked(1);">Nuôi cấy mô</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ngư nghiệp" href="https://rangdong.com.vn/giai-phap-chieu-sang-ngu-nghiep-gt246.html" onclick="setMenuClicked(1);">Ngư nghiệp</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Năng lượng mặt trời">Năng lượng mặt trời</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Điện mặt trời mái nhà" href="https://rangdong.com.vn/giai-phap-he-thong-dien-ap-mai-gt202.html" onclick="setMenuClicked(1);">Điện mặt trời mái nhà</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Giải pháp OEM/ODM">Giải pháp OEM/ODM</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Năng lực ODM/EDM" href="https://rangdong.com.vn/nang-luc-oem-odm-gt166.html" onclick="setMenuClicked(1);">Năng lực ODM/EDM</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Sản phẩm">Sản phẩm</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Sản phẩm dự án">Sản phẩm dự án</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Chủ đầu tư">Chủ đầu tư</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công cụ/Tài liệu kỹ thuật">Công cụ/Tài liệu kỹ thuật</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hồ sơ năng lực" href="https://rangdong.com.vn/category/ho-so-nang-luc" onclick="setMenuClicked(1);">Hồ sơ năng lực</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Catalogue" href="https://rangdong.com.vn/category/catalogue" onclick="setMenuClicked(1);">Catalogue</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bảng giá" href="https://rangdong.com.vn/category/bang-gia" onclick="setMenuClicked(1);">Bảng giá</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="công cụ tính toán chiếu sáng" href="https://rangdong.com.vn/tinh-so-bo-den.html" onclick="setMenuClicked(1);">Công cụ tính toán chiếu sáng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Tính toán điện mặt trời mái nhà" href="https://rangdong.com.vn/giai-phap-he-thong-dien-ap-mai-gt202.html" onclick="setMenuClicked(1);">Tính toán điện mặt trời mái nhà</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Liên hệ hỗ trợ">Liên hệ hỗ trợ</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Tư vấn thiết kế">Tư vấn thiết kế</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công cụ/Tài liệu kỹ thuật">Công cụ/Tài liệu kỹ thuật</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hồ sơ năng lực" href="https://rangdong.com.vn/category/ho-so-nang-luc" onclick="setMenuClicked(1);">Hồ sơ năng lực</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Catalogue" href="https://rangdong.com.vn/category/catalogue" onclick="setMenuClicked(1);">Catalogue</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bảng giá" href="https://rangdong.com.vn/category/bang-gia" onclick="setMenuClicked(1);">Bảng giá</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công cụ tính toán" href="https://rangdong.com.vn/tinh-so-bo-den.html" onclick="setMenuClicked(1);">Công cụ tính toán</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="công cụ tính toán chiếu sáng" href="https://rangdong.com.vn/tinh-so-bo-den.html" onclick="setMenuClicked(1);">Công cụ tính toán chiếu sáng</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Liên hệ hỗ trợ">Liên hệ hỗ trợ</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Nhà thầu thi công">Nhà thầu thi công</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công cụ/Tài liệu kỹ thuật">Công cụ/Tài liệu kỹ thuật</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hồ sơ năng lực" href="https://rangdong.com.vn/category/ho-so-nang-luc" onclick="setMenuClicked(1);">Hồ sơ năng lực</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Catalogue" href="https://rangdong.com.vn/category/catalogue" onclick="setMenuClicked(1);">Catalogue</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bảng giá" href="https://rangdong.com.vn/category/bang-gia" onclick="setMenuClicked(1);">Bảng giá</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công cụ tính toán" href="https://rangdong.com.vn/tinh-so-bo-den.html" onclick="setMenuClicked(1);">Công cụ tính toán</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hướng dẫn sử dụng" href="https://rangdong.com.vn/category/huong-dan-su-dung" onclick="setMenuClicked(1);">Hướng dẫn sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Liên hệ hỗ trợ">Liên hệ hỗ trợ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" title="Dân dụng">
+                Dân dụng
+                <span class="menu-toggle"></span>
+                <div class="menu">
+                    <div class="col">
+                        <a href="#" class="item1" title="Sản phẩm">Sản phẩm</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Thiết bị thông minh">Thiết bị thông minh</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn thông minh" href="https://rangdong.com.vn/category/den-thong-minh" onclick="setMenuClicked(2);">Đèn thông minh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công tắc thông minh" href="https://rangdong.com.vn/category/cong-tac-thong-minh" onclick="setMenuClicked(2);">Công tắc thông minh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ổ cắm thông minh" href="https://rangdong.com.vn/category/o-cam-thong-minh" onclick="setMenuClicked(2);">Ổ cắm thông minh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Cảm biến thông minh" href="https://rangdong.com.vn/category/cam-bien-thong-minh" onclick="setMenuClicked(2);">Cảm biến thông minh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bảng điều khiển cảnh" href="https://rangdong.com.vn/category/bang-dieu-khien-canh" onclick="setMenuClicked(2);">Bảng điều khiển cảnh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Camera thông minh" href="https://rangdong.com.vn/category/camera-thong-minh" onclick="setMenuClicked(2);">Camera thông minh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công tắc chuyển mạch" href="https://rangdong.com.vn/category/cong-tac-chuyen-mach-thong-minh" onclick="setMenuClicked(2);">Công tắc chuyển mạch</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ổ cắm chống giật" href="https://rangdong.com.vn" onclick="setMenuClicked(2);">Ổ cắm chống giật</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bộ điều khiển trung tâm" href="https://rangdong.com.vn/category/bo-dieu-khien-trung-tam" onclick="setMenuClicked(2);">Bộ điều khiển trung tâm</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Aptomat thông minh" href="https://rangdong.com.vn/category/aptomat-thong-minh" onclick="setMenuClicked(2);">Aptomat thông minh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bộ lặp sóng" href="https://rangdong.com.vn/category/bo-lap-song" onclick="setMenuClicked(2);">Bộ lặp sóng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Combo Smart" href="https://rangdong.com.vn/category/bo-combo-smart" onclick="setMenuClicked(2);">Combo Smart</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Loa thông minh" href="https://rangdong.com.vn/category/loa-thong-minh2" onclick="setMenuClicked(2);">Loa thông minh</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Sản phẩm chiếu sáng">Sản phẩm chiếu sáng</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED Downlight âm trần" href="https://rangdong.com.vn/category/den-led-am-tran-downlight" onclick="setMenuClicked(2);">Đèn LED Downlight âm trần</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bóng đèn LED Bulb" href="https://rangdong.com.vn/category/bong-den-led-bulb" onclick="setMenuClicked(2);">Bóng đèn LED Bulb</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bộ đèn LED tuýp" href="https://rangdong.com.vn/category/bo-den-led-tuyp" onclick="setMenuClicked(2);">Bộ đèn LED tuýp</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bóng đèn LED tuýp" href="https://rangdong.com.vn/category/bong-den-led-tuyp" onclick="setMenuClicked(2);">Bóng đèn LED tuýp</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED ốp trần" href="https://rangdong.com.vn/category/den-led-op-tran" onclick="setMenuClicked(2);">Đèn LED ốp trần</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED Panel" href="https://rangdong.com.vn/category/den-led-panel" onclick="setMenuClicked(2);">Đèn LED Panel</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED chiếu pha" href="https://rangdong.com.vn/category/den-pha-led" onclick="setMenuClicked(2);">Đèn LED chiếu pha</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED Highbay" href="https://rangdong.com.vn/category/den-led-highbay-2" onclick="setMenuClicked(2);">Đèn LED Highbay</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn đường LED" href="https://rangdong.com.vn/category/den-duong-led" onclick="setMenuClicked(2);">Đèn đường LED</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Sản phẩm học đường" href="https://rangdong.com.vn/category/san-pham-hoc-duong" onclick="setMenuClicked(2);">Sản phẩm học đường</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED dây" href="https://rangdong.com.vn/category/den-led-day" onclick="setMenuClicked(2);">Đèn LED dây</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED Tracklight" href="https://rangdong.com.vn/category/den-led-tracklight-3" onclick="setMenuClicked(2);">Đèn LED Tracklight</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED gắn tường" href="https://rangdong.com.vn/category/den-led-gan-tuong" onclick="setMenuClicked(2);">Đèn LED gắn tường</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED gương" href="https://rangdong.com.vn/category/den-led-guong" onclick="setMenuClicked(2);">Đèn LED gương</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn ray LED" href="https://rangdong.com.vn/category/den-ray-led" onclick="setMenuClicked(2);">Đèn ray LED</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn led Linear" href="https://rangdong.com.vn/category/den-led-linear" onclick="setMenuClicked(2);">Đèn led Linear</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bộ đèn bán nguyệt" href="https://rangdong.com.vn/category/bo-den-ban-nguyet" onclick="setMenuClicked(2);">Bộ đèn bán nguyệt</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED chỉ dẫn" href="https://rangdong.com.vn/category/den-led-chi-dan" onclick="setMenuClicked(2);">Đèn LED chỉ dẫn</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED chống ẩm" href="https://rangdong.com.vn/category/den-led-chong-am" onclick="setMenuClicked(2);">Đèn LED chống ẩm</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phụ kiện đèn LED" href="https://rangdong.com.vn/category/phu-kien-den-led" onclick="setMenuClicked(2);">Phụ kiện đèn LED</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn pin" href="https://rangdong.com.vn/category/den-pin" onclick="setMenuClicked(2);">Đèn pin</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Thiết bị điện">Thiết bị điện</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Aptomat" href="https://rangdong.com.vn/category/aptomat" onclick="setMenuClicked(2);">Aptomat</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Tủ Aptomat" href="https://rangdong.com.vn/category/tu-aptomat" onclick="setMenuClicked(2);">Tủ Aptomat</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Vỏ hộp Aptomat" href="https://rangdong.com.vn/category/vo-hop-aptomat" onclick="setMenuClicked(2);">Vỏ hộp Aptomat</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Mặt Aptomat" href="https://rangdong.com.vn/category/mat-aptomat" onclick="setMenuClicked(2);">Mặt Aptomat</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Quạt hút" href="https://rangdong.com.vn/category/quat-hut" onclick="setMenuClicked(2);">Quạt hút</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ổ cắm điện" href="https://rangdong.com.vn/category/o-cam-dien" onclick="setMenuClicked(2);">Ổ cắm điện</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích cắm điện" href="https://rangdong.com.vn/category/phich-cam-dien" onclick="setMenuClicked(2);">Phích cắm điện</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Mặt công tắc" href="https://rangdong.com.vn/category/mat-cong-tac" onclick="setMenuClicked(2);">Mặt công tắc</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hạt công tắc" href="https://rangdong.com.vn/category/hat-cong-tac" onclick="setMenuClicked(2);">Hạt công tắc</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn bắt muỗi, côn trùng" href="https://rangdong.com.vn/category/den-bat-muoi-con-trung2" onclick="setMenuClicked(2);">Đèn bắt muỗi, côn trùng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Vợt bắt muỗi" href="https://rangdong.com.vn/category/vot-bat-muoi" onclick="setMenuClicked(2);">Vợt bắt muỗi</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn điều hòa phòng tắm" href="https://rangdong.com.vn/category/den-dieu-hoa-phong-tam" onclick="setMenuClicked(2);">Đèn điều hòa phòng tắm</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Thiết bị cảm biến" href="https://rangdong.com.vn/category/thiet-bi-cam-bien" onclick="setMenuClicked(2);">Thiết bị cảm biến</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Quạt điều hòa phòng tắm" href="https://rangdong.com.vn/category/den-dieu-hoa-phong-tam" onclick="setMenuClicked(2);">Quạt điều hòa phòng tắm</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Năng lượng mặt trời">Năng lượng mặt trời</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Điện mặt trời mái nhà" href="https://rangdong.com.vn/category/dien-mat-troi-mai-nha" onclick="setMenuClicked(2);">Điện mặt trời mái nhà</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn năng lượng mặt trời" href="https://rangdong.com.vn/category/den-nang-luong-mat-troi3" onclick="setMenuClicked(2);">Đèn năng lượng mặt trời</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Phích nướ">Phích nước</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích đựng nước" href="https://rangdong.com.vn/category/phich-dung-nuoc3" onclick="setMenuClicked(2);">Phích đựng nước</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bình nước cầm tay" href="https://rangdong.com.vn/category/binh-nuoc-cam-tay" onclick="setMenuClicked(2);">Bình nước cầm tay</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích cầm tay" href="https://rangdong.com.vn/category/phich-cam-tay" onclick="setMenuClicked(2);">Phích cầm tay</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bình giữ nhiệt" href="https://rangdong.com.vn/category/binh-giu-nhiet" onclick="setMenuClicked(2);">Bình giữ nhiệt</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bình đựng thức ăn" href="https://rangdong.com.vn/category/binh-dung-thuc-an3" onclick="setMenuClicked(2);">Bình đựng thức ăn</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bình ủ - Bình trà" href="https://rangdong.com.vn/category/binh-u" onclick="setMenuClicked(2);">Bình ủ - Bình trà</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ruột phích" href="https://rangdong.com.vn/category/ruot-phich3" onclick="setMenuClicked(2);">Ruột phích</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích pha trà - Cà phê" href="https://rangdong.com.vn/category/phich-pha-tra" onclick="setMenuClicked(2);">Phích pha trà - Cà phê</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích quà tặng" href="https://rangdong.com.vn/category/phich-qua-tang" onclick="setMenuClicked(2);">Phích quà tặng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích tết" href="https://rangdong.com.vn/category/phich-tet" onclick="setMenuClicked(2);">Phích tết</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ấm siêu tốc" href="https://rangdong.com.vn/category/am-sieu-toc" onclick="setMenuClicked(2);">Ấm siêu tốc</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Cốc giữ nhiệt" href="https://rangdong.com.vn/category/coc-giu-nhiet" onclick="setMenuClicked(2);">Cốc giữ nhiệt</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Nông nghiệp thông minh">Nông nghiệp thông minh</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích đựng nước" href="https://rangdong.com.vn/category/phich-dung-nuoc3" onclick="setMenuClicked(2);">Phích đựng nước</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bình nước cầm tay" href="https://rangdong.com.vn/category/binh-nuoc-cam-tay" onclick="setMenuClicked(2);">Bình nước cầm tay</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích cầm tay" href="https://rangdong.com.vn/category/phich-cam-tay" onclick="setMenuClicked(2);">Phích cầm tay</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bình giữ nhiệt" href="https://rangdong.com.vn/category/binh-giu-nhiet" onclick="setMenuClicked(2);">Bình giữ nhiệt</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bình đựng thức ăn" href="https://rangdong.com.vn/category/binh-dung-thuc-an3" onclick="setMenuClicked(2);">Bình đựng thức ăn</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bình ủ - Bình trà" href="https://rangdong.com.vn/category/binh-u" onclick="setMenuClicked(2);">Bình ủ - Bình trà</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ruột phích" href="https://rangdong.com.vn/category/ruot-phich3" onclick="setMenuClicked(2);">Ruột phích</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích pha trà - Cà phê" href="https://rangdong.com.vn/category/phich-pha-tra" onclick="setMenuClicked(2);">Phích pha trà - Cà phê</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích quà tặng" href="https://rangdong.com.vn/category/phich-qua-tang" onclick="setMenuClicked(2);">Phích quà tặng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích tết" href="https://rangdong.com.vn/category/phich-tet" onclick="setMenuClicked(2);">Phích tết</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ấm siêu tốc" href="https://rangdong.com.vn/category/am-sieu-toc" onclick="setMenuClicked(2);">Ấm siêu tốc</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Cốc giữ nhiệt" href="https://rangdong.com.vn/category/coc-giu-nhiet" onclick="setMenuClicked(2);">Cốc giữ nhiệt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Thông tin hỗ trợ">Thông tin hỗ trợ</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Hướng dẫn sử dụng">Hướng dẫn sử dụng</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công trình thực tế">Công trình thực tế</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Công cụ tài liệu">Công cụ tài liệu</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Catalogue">Catalogue</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Cảnh quan - Tâm linh" href="https://rangdong.com.vn/category/canh-quan-tam-linh" onclick="setMenuClicked(2);">Cảnh quan - Tâm linh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED chiếu sáng" href="https://rangdong.com.vn/category/den-led-chieu-sang4" onclick="setMenuClicked(2);">Đèn LED chiếu sáng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đường phố" href="https://rangdong.com.vn/category/duong-pho" onclick="setMenuClicked(2);">Đường phố</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Học đường" href="https://rangdong.com.vn/category/hoc-duong4" onclick="setMenuClicked(2);">Học đường</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Năng lượng mặt trời" href="https://rangdong.com.vn/category/nang-luong-mat-troi4" onclick="setMenuClicked(2);">Năng lượng mặt trời</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Ngư nghiệp" href="https://rangdong.com.vn/category/ngu-nghiep2" onclick="setMenuClicked(2);">Ngư nghiệp</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Nhà ở xã hội" href="https://rangdong.com.vn/category/nha-o-xa-hoi" onclick="setMenuClicked(2);">Nhà ở xã hội</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Nhà thông minh" href="https://rangdong.com.vn/category/nha-thong-minh7" onclick="setMenuClicked(2);">Nhà thông minh</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="NN-CNC" href="https://rangdong.com.vn/category/nn-cnc" onclick="setMenuClicked(2);">NN-CNC</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích nước" href="https://rangdong.com.vn/category/phich-nuoc3" onclick="setMenuClicked(2);">Phích nước</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Thiết bị điện" href="https://rangdong.com.vn/category/thiet-bi-dien3" onclick="setMenuClicked(2);">Thiết bị điện</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công trình dự án" href="https://rangdong.com.vn/category/cong-trinh-du-an" onclick="setMenuClicked(2);">Công trình dự án</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công cụ tính toán chiếu sáng">Công cụ tính toán chiếu sáng</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Tính toán điện mặt trời mái nhà">Tính toán điện mặt trời mái nhà</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Bảng giá">Bảng giá</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Điểm mua hàng">Điểm mua hàng</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Gian hàng trực tuyến">Gian hàng trực tuyến</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Cửa hàng đại lý">Cửa hàng đại lý</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Showroom trải nghiệm">Showroom trải nghiệm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" title="Hợp tác kinh doanh">
+                Hợp tác kinh doanh
+                <span class="menu-toggle"></span>
+                <div class="menu">
+                    <div class="col">
+                        <a href="#" class="item1" title="Đại lý phân phối">Đại lý phân phối</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Sản phẩm">Sản phẩm</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công cụ/Tài liệu">Công cụ/Tài liệu</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bảng giá" href="https://rangdong.com.vn/category/bang-gia" onclick="setMenuClicked(3);">Bảng giá</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Catalogue" href="https://rangdong.com.vn/category/catalogue" onclick="setMenuClicked(3);">Catalogue</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hướng dẫn sử dụng" href="https://rangdong.com.vn/category/huong-dan-su-dung" onclick="setMenuClicked(3);">Hướng dẫn sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Đăng ký làm đại lý">Đăng ký làm đại lý</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Đại lý ủy quyền (ShowRoom)">Đại lý ủy quyền (ShowRoom)</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Sản phẩm">Sản phẩm</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Giải pháp">Giải pháp</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công cụ/Tài liệu kỹ thuật">Công cụ/Tài liệu kỹ thuật</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hồ sơ năng lực" href="https://rangdong.com.vn/category/ho-so-nang-luc" onclick="setMenuClicked(3);">Hồ sơ năng lực</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Catalogue" href="https://rangdong.com.vn/category/catalogue" onclick="setMenuClicked(3);">Catalogue</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bảng giá" href="https://rangdong.com.vn/category/bang-gia" onclick="setMenuClicked(3);">Bảng giá</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công cụ tính toán chiếu sáng" href="https://rangdong.com.vn/tinh-so-bo-den.html" onclick="setMenuClicked(3);">Công cụ tính toán chiếu sáng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Tính toán điện mặt trời mái nhà" href="https://rangdong.com.vn/giai-phap-he-thong-dien-ap-mai-gt202.html" onclick="setMenuClicked(3);">Tính toán điện mặt trời mái nhà</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hướng dẫn sử dụng" href="https://rangdong.com.vn/category/huong-dan-su-dung" onclick="setMenuClicked(3);">Hướng dẫn sử dụng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Đại lý công trình dự án">Đại lý công trình dự án</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Sản phẩm">Sản phẩm</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Giải pháp">Giải pháp</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công cụ/Tài liệu kỹ thuật">Công cụ/Tài liệu kỹ thuật</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hồ sơ năng lực" href="https://rangdong.com.vn/category/ho-so-nang-luc" onclick="setMenuClicked(3);">Hồ sơ năng lực</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Catalogue" href="https://rangdong.com.vn/category/catalogue" onclick="setMenuClicked(3);">Catalogue</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bảng giá" href="https://rangdong.com.vn/category/bang-gia" onclick="setMenuClicked(3);">Bảng giá</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công cụ tính toán" href="https://rangdong.com.vn/tinh-so-bo-den.html" onclick="setMenuClicked(3);">Công cụ tính toán</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hướng dẫn sử dụng" href="https://rangdong.com.vn/category/huong-dan-su-dung" onclick="setMenuClicked(3);">Hướng dẫn sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Liên hệ hỗ trợ">Liên hệ hỗ trợ</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Công ty công nghệ">Công ty công nghệ</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Sản phẩ">Sản phẩm</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Giải pháp">Giải pháp</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Liên hệ hỗ trợ">Liên hệ hỗ trợ</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Thợ điện">Thợ điện</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Công cụ/Tài liệu kỹ thuật">Công cụ/Tài liệu kỹ thuật</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hồ sơ năng lực" href="https://rangdong.com.vn/category/ho-so-nang-luc" onclick="setMenuClicked(3);">Hồ sơ năng lực</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Catalogue" href="https://rangdong.com.vn/category/catalogue" onclick="setMenuClicked(3);">Catalogue</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Bảng giá" href="https://rangdong.com.vn/category/bang-gia" onclick="setMenuClicked(3);">Bảng giá</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Công cụ tính toán" href="https://rangdong.com.vn/tinh-so-bo-den.html" onclick="setMenuClicked(3);">Công cụ tính toán</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Hướng dẫn sử dụng" href="https://rangdong.com.vn/category/huong-dan-su-dung" onclick="setMenuClicked(3);">Hướng dẫn sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Đăng ký đào tạo">Đăng ký đào tạo</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="itemS"  title="Thư viện">
+                Thư viện 
+                <span class="menu-toggle"></span>
+                <div class="menuS">
+                    <a href="#" class="item3"  title="Công trình xanh">Công trình xanh</a>
+                    <a href="#" class="item3"  title="Lĩnh vực giải pháp">Lĩnh vực giải pháp</a>
+                    <a href="#" class="item3"  title="Chia sẻ của chuyên gia">Chia sẻ của chuyên gia</a>
+                    <a href="#" class="item3"  title="Kiến thức chiếu sáng">Kiến thức chiếu sáng</a>
+                    <a href="#" class="item3"  title="Hỗ trợ">Hỗ trợ</a>
+                    <a href="#" class="item3"  title="Công bố chất lượng">Công bố chất lượng</a>
+                    <a href="#" class="item3"  title="Chứng nhận ISO">Chứng nhận ISO</a>
+                    <a href="#" class="item3"  title="Chứng nhận tiến bộ khoa học kỹ thuật">Chứng nhận tiến bộ khoa học kỹ thuật</a>
+                    <a href="#" class="item3"  title="Chứng chỉ quốc tế">Chứng chỉ quốc tế</a>
+                </div>
+            </div>
+            <div class="item" title="Về chúng tôi">
+                Về chúng tôi
+                <span class="menu-toggle"></span>
+                <div class="menu">
+                    <div class="col">
+                        <a href="#" class="item1" title="Giới thiệu chung">Giới thiệu chung</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Lịch sử phát triển">Lịch sử phát triển</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Sứ mệnh - Tầm nhìn">Sứ mệnh - Tầm nhìn</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Hoạt động cộng đồng">Hoạt động cộng đồng</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Văn hóa Rạng Đông">Văn hóa Rạng Đông</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Danh hiệu giải thưởng">Danh hiệu giải thưởng</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Câu chuyện thương hiệu">Câu chuyện thương hiệu</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Trách nhiệm xã hội">Trách nhiệm xã hội</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Năng lực">Năng lực</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Năng lực tài chính">Năng lực tài chính</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Năng lực thị trường">Năng lực thị trường</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Năng lực sản xuất">Năng lực sản xuất</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Năng lực KHCN">Năng lực KHCN</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Năng lực OEM & ODM">Năng lực OEM & ODM</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Tin tức">Tin tức</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Nhà thông minh">Nhà thông minh</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Hoạt động - Sự kiện">Hoạt động - Sự kiện</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Sản phẩm - Công nghệ">Sản phẩm - Công nghệ</a>
+                            <ul class="menu menu-sub menu-sub-2">
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn LED chiếu sáng" href="https://rangdong.com.vn/category/den-led-chieu-sang2" onclick="setMenuClicked(5);">Đèn LED chiếu sáng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn năng lượng mặt trời" href="https://rangdong.com.vn/category/den-nang-luong-mat-troi" onclick="setMenuClicked(5);">Đèn năng lượng mặt trời</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Phích nước" href="https://rangdong.com.vn/category/phich-nuoc2" onclick="setMenuClicked(5);">Phích nước</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Sản phẩm chuyên dụng" href="https://rangdong.com.vn/category/san-pham-chuyen-dung" onclick="setMenuClicked(5);">Sản phẩm chuyên dụng</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Chiếu sáng cảnh quan" href="https://rangdong.com.vn/category/chieu-sang-canh-quan4" onclick="setMenuClicked(5);">Chiếu sáng cảnh quan</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Đèn bàn bảo vệ thị lực" href="https://rangdong.com.vn/category/den-ban-bao-ve-thi-luc2" onclick="setMenuClicked(5);">Đèn bàn bảo vệ thị lực</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Học đường" href="https://rangdong.com.vn/category/hoc-duong2" onclick="setMenuClicked(5);">Học đường</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Nông nghiệp công nghệ cao" href="https://rangdong.com.vn/category/nong-nghiep-cong-nghe-cao3" onclick="setMenuClicked(5);">Nông nghiệp công nghệ cao</a></li>
+                                <li class="menu-item"><a class="menu-link menu-level-4" title="Thiết bị điện" href="https://rangdong.com.vn/category/thiet-bi-dien2" onclick="setMenuClicked(5);">Thiết bị điện</a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Văn hóa nội bộ">Văn hóa nội bộ</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Chuyển đổi số">Chuyển đổi số</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Báo chí về Rạng Đông">Báo chí về Rạng Đông</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="item1" title="Thông tin cổ đông">Thông tin cổ đông</a>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Báo cáo tài chính">Báo cáo tài chính</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Thông báo cổ đông">Thông báo cổ đông</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Báo cáo thường niên">Báo cáo thường niên</a>
+                        </div>
+                        <div class="sub-item-wrapper">
+                            <a href="#" class="item2" title="Đại hội đồng cổ đông">Đại hội đồng cổ đông</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item"  title="Liên hệ">Liên hệ</div>
+            <div class="itemS"  title="Export">
+                Export
+                <span class="menu-toggle"></span>
+                <div class="menuS">
+                    <a href="#" class="item3"  title="LED Products">LED Products</a>
+                    <a href="#" class="item3"  title="Vacuum flask">Vacuum flask</a>
+                </div>
+            </div>
+            <div class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"/>
+                </svg>
+            </div>
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/>
+                </svg>
+            </div>
+            <button class="navbar-toggle" id="menuToggleBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-sidebar" id="menuSidebar">
+                <div class="sidebar-header">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/logonew.png" alt="logo rạng đông">
+                    <button class="close-btn-inner" id="closeMenuBtnInner">&times;</button>
+                </div>
+                <div class="sidebar-search-box">
+                    <input type="text" id="sidebarSearchInput">
+                    <div class="search-icon-mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 16px; height: 16px;">
+                            <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sidebar-content" id="mobileMenuPlaceholder"></div>
+            </div>
+            </div>
+    </div>
+    <div class="banner">
+        <div class="banner-img">
+            <img src="https://rangdong.com.vn/themes/rangdong/images/slide-05.jpg" alt="Banner Home" class="banner-home__img">
+        </div>
+        <div class="banner-content wow animate__animated animate__fadeInLeft col-lg-5">
+            <h2>
+                Tiết kiệm Năng lượng<span></span>
+                <br>
+                Thịnh vượng tương lai
+            </h2>
+            <div class="btn">
+                <span>Khám phá ngay</span>
+                <div class="icon-circle">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="highlight">
+        <div class="cnt wow animate__animated animate__fadeInUp">
+            <h2>Các lĩnh vực nổi bật</h2>
+            <p>Doanh nghiệp Khoa học công nghệ làm chủ toàn bộ chuỗi giá trị, tiên phong kiến tạo Hệ sinh thái Xanh - Thông minh</p>
+        </div>
+        <div class="box">
+            <div class="box1 wow animate__animated animate__fadeInUp">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/field-1.jpg" alt="Smart indoor">
+                <div class="row1">
+                    <a href="https://rangdong.com.vn/category/indoor">Smart indoor</a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="box1 wow animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/field-2.jpg" alt="Smart city">
+                    <div class="row1">
+                    <a href="https://rangdong.com.vn/category/outdoor">Smart city</a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="box1 wow animate__animated animate__fadeInUp" style="animation-delay: 0.8s">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/field-3.jpg" alt="Smart farm">
+                <div class="row1">
+                    <a href="https://rangdong.com.vn/category/smart-farm">Smart farm</a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="why">
+        <div class="content">
+            <div class="cnt wow animate__animated animate__fadeInUp">
+                <h2>Vì sao chọn Rạng Đông?</h2>
+            </div>
+            <div class="trademark">
+                <div class="trm-left col-6 col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__fadeInLeft">
+                    <h3>Thương hiệu quốc dân gần 70 năm</h3>
+                    <p>Rạng Đông kết hợp năng lực nghiên cứu công nghệ chiếu sáng với các công nghệ hiện
+                        đại (IoT, AI) cùng sự thấu hiểu nhu cầu thực tế của người Việt, nhằm tạo ra các 
+                        sản phẩm và giải pháp an toàn, dễ sử dụng, phù hợp với môi trường sống Việt Nam.</p>
+                </div>
+                <div class="trm-right col-6 col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__fadeInRight">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/medal.png" alt="Thương hiệu quốc dân gần 70 năm">
+                    <div class="text-right">
+                        Thương hiệu 
+                        <br>
+                        quốc dân
+                    </div>
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-row1 col-6 col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__fadeInLeft">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/why-us-1.png" alt="Sản xuất quy mô công nghiệp">
+                    <a href="#">Sản xuất quy mô công nghiệp Make in Vietnam</a>
+                    <p>Nhà máy sản xuất điện tử Xanh - Thông minh - Linh hoạt - Quản lý chất lượng tại các chuẩn châu Âu,
+                        đáp ứng các chứng chỉ như CE, UL, TÜV, G7 G20. Rạng Đông có năng lực may đo, cá thể hóa theo nhu cầu khách hàng.</p>
+                </div>
+                <div class="box-row1 col-6 col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__fadeInRight">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/why-us-2.png" alt="Sản xuất quy mô công nghiệp">
+                    <a href="#" class="text-box">Hệ sinh thái Sản phẩm/ Hệ thống giải pháp Dịch vụ 4.0+</a>
+                    <p>Đa dạng đáp ứng mọi nhu cầu công trình xanh(Dân dụng, công nghiệp, đô thị…)</p>
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-row1 col-6 col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__fadeInLeft">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/why-us-3.JPG" alt="Sản xuất quy mô công nghiệp">
+                    <a href="#" class="text-box"> Tự chủ toàn bộ chuỗi giá trị</a>
+                    <p>Thiết kế, chế tạo, kiểm nghiệm đến thương mại hoá Hệ sinh thái Sản phẩm/ Hệ thống giải pháp/ Dịch vụ 4.0</p>
+                </div>
+                <div class="box-row1 col-6 col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__fadeInRight">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/why-us-4.JPG" alt="Sản xuất quy mô công nghiệp">
+                    <a href="#" class="text-box">Dịch vụ tại chỗ, phủ rộng toàn quốc</a>
+                    <p>Rạng Đông triển khai đồng bộ; dịch vụ 4 lớp với 3 vùng thị trường; 7 chi
+                        nhánh; 3 trung tâm tư vấn; 15 showroom; 1 trung tâm; Contact Center; 24.000 điểm bán </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="connect">
+        <img src="bg_connect_full.webp" alt="Connect">
+        <div class="connect-text col-sm-10">
+            <div class="wow animate__animated animate__fadeInLeft">
+                <h2>Rallismart : Nền tảng kết nối thiết bị thông minh do Rạng Đông làm chủ</h2>
+                <p>Rạng Đông cung cấp Rallismart như một nền tảng mở, kiến trúc module hóa, cho phép
+                    triển khai linh hoạt theo quy mô và loại hình công trình, dự án.</p>
+                <p>
+                    Hỗ trợ kết nối, tích hợp với các hệ thống BMS thông qua các giao thức tiêu chuẩn
+                    như BACnet, Modbus, MQTT, API, cho phép đồng bộ dữ liệu hai chiều giữa nền tảng
+                    IoT và hệ thống quản lý trung tâm.</p>
+            </div>
+            <div class="btn1 wow animate__animated animate__fadeInLeft">
+                <span>Tìm hiểu thêm</span>
+                <div class="icon-circle">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="sol">
+        <div class="cnt">
+            <div class="wow animate__animated animate__fadeInUp">
+                <h2>Hệ sinh thái Giải pháp Xanh - Thông minh</h2>
+            </div>
+            <div class="btn1 wow animate__animated animate__fadeInUp">
+                <span>Tìm hiểu thêm</span>
+                <div class="icon-circle">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="custom-arrow pre-arrow" id="pre-sol"><i class="fas fa-angle-left"></i></div>
+        <div class="custom-arrow next-arrow" id="next-sol"><i class="fas fa-angle-right"></i></div>
+        <div class="slider-box wow animate__animated animate__fadeInUp">
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/ecosystem-5.jpg" alt="Giải pháp đường phố" class="w-100">
+                <div class="row1">
+                    <a href="https://rangdong.com.vn/giai-phap-chieu-sang-duong-pho-thong-minh.html">Giải pháp đường phố </a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/ecosystem-6.jpg" alt="Giải pháp nhà ở xã hội" class="w-100">
+                <div class="row1">
+                    <a href="https://rangdong.com.vn/nha-o-xa-hoi-gt251.html">Giải pháp nhà ở xã hội </a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/ecosystem-7.jpg" alt="Giải pháp cảnh quan" class="w-100">
+                <div class="row1">
+                    <a href="https://rangdong.com.vn/giai-phap-chieu-sang-canh-quan-gt206.html">Giải pháp cảnh quan </a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/ecosystem-1.jpg" alt="Giải pháp nhà thông minh" class="w-100">
+                <div class="row1">
+                    <a href="https://rangdong.com.vn/nha-thong-minh-rang-dong.html">Giải pháp nhà thông minh </a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/ecosystem-2.jpg" alt="Giải pháp văn phòng công sở" class="w-100">
+                <div class="row1">
+                    <a href="https://rangdong.com.vn/giai-phap-chieu-sang-van-phong-thong-minh.html">Giải pháp văn phòng công sở </a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/ecosystem-3.jpg" alt="Giải pháp công nghiệp" class="w-100">
+                    <div class="row1">
+                    <a href="https://rangdong.com.vn/giai-phap-chieu-sang-nha-may-cong-nghiep.html">Giải pháp công nghiệp</a>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16l4-4-4-4"></path>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overview">
+        <div class="overview-text">
+            <div class="wow animate__animated animate__fadeInUp">
+                <h2>Tổng quan về công trình Xanh - Thông minh</h2>
+            </div>
+            <div class="btn1 wow animate__animated animate__fadeInUp">
+                <span>Tìm hiểu thêm</span>
+                <div class="icon-circle">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="logo wow animate__animated animate__fadeInUp">
+            <img src="https://rangdong.com.vn/themes/rangdong/images/logo-overview-1.png" alt="Tổng quan về công trình Xanh - Thông minh" class="mb-3 me-4 me-lg-5">
+            <img src="https://rangdong.com.vn/themes/rangdong/images/logo-overview-2.png" alt="Tổng quan về công trình Xanh - Thông minh" class="mb-3">
+        </div>
+    </div>
+    <div class="project">
+        <div class="cnt">
+            <div class=" wow animate__animated animate__fadeInUp">
+                <h2>Công trình tiêu biểu</h2>
+            </div>
+            <div class="btn1 wow animate__animated animate__fadeInUp">
+                <span>Tìm hiểu thêm</span>
+                <div class="icon-circle">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="custom-arrow pre-arrow" id="pre-project"><i class="fas fa-angle-left"></i></div>
+        <div class="custom-arrow next-arrow" id="next-project"><i class="fas fa-angle-right"></i></div>
+        <div class="slider-box1 wow animate__animated animate__fadeInUp">
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/pj-1.jpg" alt="Toà nhà văn phòng công sở" class="w-100">
+                <a href="https://rangdong.com.vn/chieu-sang-toa-nha-van-phong-chinh-phu-da69.html">Toà nhà văn phòng công sở </a>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/pj-2.jpg" alt="Dự án Căn hộ cao cấp SunGrand Thụy Khuê" class="w-100">
+                <a href="https://rangdong.com.vn/toa-nha-riverside-tower-da-nang-da13.html">Dự án Căn hộ cao cấp SunGrand Thụy Khuê</a>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/pj-3.jpg" alt="Trườngchuyên Hà Nội AMSTERDAM" class="w-100">
+                <a href="https://rangdong.com.vn/truong-amsterdam-da37.html">Trường chuyên Hà Nội AMSTERDAM</a>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/pj-4.jpg" alt="Giải pháp nhà thông minh" class="w-100">
+                <a href="https://rangdong.com.vn/nha-may-o-to-truong-hai-da48.html">Nhà máy sản xuất ô tô Trường Hải</a>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/pj-1.jpg" alt="Toà nhà văn phòng công sở" class="w-100">
+                <a href="https://rangdong.com.vn/chieu-sang-toa-nha-van-phong-chinh-phu-da69.html">Toà nhà văn phòng công sở </a>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/pj-2.jpg" alt="Dự án Căn hộ cao cấp SunGrand Thụy Khuê" class="w-100">
+                <a href="https://rangdong.com.vn/toa-nha-riverside-tower-da-nang-da13.html">Dự án Căn hộ cao cấp SunGrand Thụy Khuê</a>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/pj-3.jpg" alt="Trườngchuyên Hà Nội AMSTERDAM" class="w-100">
+                <a href="https://rangdong.com.vn/truong-amsterdam-da37.html">Trường chuyên Hà Nội AMSTERDAM</a>
+            </div>
+            <div class="box1">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/pj-4.jpg" alt="Giải pháp nhà thông minh" class="w-100">
+                <a href="https://rangdong.com.vn/nha-may-o-to-truong-hai-da48.html">Nhà máy sản xuất ô tô Trường Hải</a>
+            </div>
+        </div>
+    </div> 
+    <div class="products">
+        <div class=" wow animate__animated animate__fadeInUp">
+            <h2>Sản phẩm tiêu biểu</h2>
+        </div>
+        <div class="box2 wow animate__animated animate__fadeInUp">
+            <div class="product-item-large">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/banner-sp.JPG" alt="Sản phẩm tiêu biểu">
+            </div>
+            <div class="product-item-medium">
+                <img src="https://rangdong.com.vn/themes/rangdong/images/sp-3.JPG" alt="Sản phẩm tiêu biểu">
+            </div>
+        </div>
+        <div class="box3">
+            <div class="box3-1">
+                <div class="product-item wow animate__animated animate__fadeInUp" id="prd-it-1">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/sp-2-new.png" alt="Sản phẩm tiêu biểu">
+                </div>
+                <div class="product-item wow animate__animated animate__fadeInUp" id="prd-it-2">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/sp-5-new.png" alt="Sản phẩm tiêu biểu">
+                </div>
+                <div class="product-item wow animate__animated animate__fadeInUp" id="prd-it-3">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/sp-6-new.png" alt="Sản phẩm tiêu biểu">
+                </div>
+                <div class="product-item wow animate__animated animate__fadeInUp" id="prd-it-4">
+                    <img src="https://rangdong.com.vn/themes/rangdong/images/sp-7-new.png" alt="Sản phẩm tiêu biểu">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="col-12">
+            <img src="https://rangdong.com.vn/themes/rangdong/images/logo.png" alt="Rạng Đông" class="footer-logo">
+        </div>
+        <div class="inf">
+            <div class="inf1">
+                <div class="info">
+                    <b>CÔNG TY CP BÓNG ĐÈN PHÍCH NƯỚC RẠNG ĐÔNG</b>
+                    <b>Trụ sở chính</b>
+                    <p>Số 87-89, Phố Hạ Đình, Phường Khương Đình, Thành phố Hà Nội</p>
+                    <div class="tt">
+                        <b>Tel:</b>
+                        <p>024 3858 4310 | 0243 858 4165 /</p>
+                        <b>Hotline:</b>
+                        <p>19002098</p>
+                    </div>
+                    <div class="tt">
+                        <b>Email:</b>
+                        <p>ralaco@rangdong.com.vn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inf2">
+                <div class="info">
+                    <b>Thông tin Công ty</b>
+                    <p>Giới thiệu</p>
+                    <p>Tin tức</p>
+                    <p>Thông tin Cổ đông</p>
+                    <p>Điểm mua hàng</p>
+                    <p>Mua hàng trực tuyến</p>
+                </div>
+                <div class="info">
+                    <b>Khách hàng/Đối tác</b>
+                    <p>Khách hàng đại chúng</p>
+                    <p>Chuyên dụng - Đối tác</p>
+                    <p>Công cụ tài liệu</p>
+                    <p>Tri thức nền</p>
+                    <p>Tính toán chiếu sáng</p>
+                </div>
+                <div class="info">
+                    <b>Sản phẩm</b>
+                    <p>Đèn LED chiếu sáng</p>
+                    <p>Nhà thông minh RalliSmart</p>
+                    <p>Năng lượng mặt trời</p>
+                    <p>Thiết bị điện</p>
+                    <p>Nông nghiệp công nghệ cao</p>
+                </div>
+                <div class="info">
+                    <b>Hệ thống giải pháp</b>
+                    <p>Điện NLMT mái nhà</p>
+                    <p>Học đường</p>
+                    <p>Chiếu sáng cảnh quan</p>
+                    <p>Đường phố IoT</p>
+                    <p>Văn phòng công sở</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub">
+            <img src="https://rangdong.com.vn/themes/rangdong/images/thong_bao_website_bo_cong_thuong 1.png" alt="Đã đăng ký Bộ Công Thương">
+            <div class="left-sub">
+                <p>GPĐKKD số: 0103004893 do sở KHĐT TP Hà Nội cấp ngày 15/07/2004</p>
+                <p>Copyright ©2026 - Công ty CP Bóng đèn Phích nước Rạng Đông</p>
+            </div>
+            <div class="right-sub col-md-3">
+                <p>Liên hệ chúng tôi</p>
+                <div class="row-sub">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider-box').slick({
+            slidesToShow: 3,         
+            slidesToScroll: 1,      
+            infinite: true,          
+            arrows: true,    
+            autoplay: true,
+            autoplaySpeed: 2000,      
+            prevArrow: $('#pre-sol'),    
+            nextArrow: $('#next-sol'),    
+            responsive: [
+                {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+            });
+        });
+        $(document).ready(function(){
+            $('.slider-box1').slick({
+            slidesToShow: 4,         
+            slidesToScroll: 1,      
+            infinite: true,          
+            arrows: true,   
+            autoplay: true,
+            autoplaySpeed: 2000,        
+            prevArrow: $('#pre-project'),    
+            nextArrow: $('#next-project'),  
+            responsive: [
+                {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 577,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggleBtn = document.getElementById("menuToggleBtn");
+            const menuOverlay = document.getElementById("menuOverlay");
+            const menuSidebar = document.getElementById("menuSidebar");
+            const closeMenuBtnInner = document.getElementById("closeMenuBtnInner");
+            const mainNavbar = document.getElementById("mainNavbar");
+            const mobilePlaceholder = document.getElementById("mobileMenuPlaceholder");
+            const sidebarSearchInput = document.getElementById("sidebarSearchInput");
+            const searchSuggestions = document.getElementById("searchSuggestions");
+            const initMobileMenu = () => {
+                if (!mainNavbar || !mobilePlaceholder) return;
+                mobilePlaceholder.innerHTML = "";
+                const items = mainNavbar.querySelectorAll('.item, .itemS, .cart');
+                items.forEach(item => {
+                    const clonedItem = item.cloneNode(true);
+                    if (clonedItem.classList.contains('item') || clonedItem.classList.contains('itemS')) {
+                        let textContent = "";
+                        Array.from(clonedItem.childNodes).forEach(node => {
+                            if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== "") {
+                                textContent += node.textContent.trim();
+                                node.remove();
+                            }
+                        });
+                        const textNodeWrapper = document.createElement('text');
+                        textNodeWrapper.textContent = textContent;
+                        clonedItem.insertBefore(textNodeWrapper, clonedItem.firstChild);
+                    }
+                    
+                    mobilePlaceholder.appendChild(clonedItem);
+                });
+                registerAccordionEvents();
+            };
+            const registerAccordionEvents = () => {
+                const level1Items = mobilePlaceholder.querySelectorAll('.item, .itemS');
+                level1Items.forEach(item => {
+                    item.addEventListener('click', (e) => {
+                        if (e.target.closest('.menu') || e.target.closest('.menuS')) return;
+                        e.preventDefault();
+                        e.stopPropagation();
+                        level1Items.forEach(otherItem => {
+                            if (otherItem !== item) otherItem.classList.remove('is-open');
+                        });
+                        item.classList.toggle('is-open');
+                    });
+                });
+                const level2Cols = mobilePlaceholder.querySelectorAll('.col');
+                level2Cols.forEach(col => {
+                    col.addEventListener('click', (e) => {
+                        if (e.target.classList.contains('item2')) return;
+                        e.preventDefault();
+                        e.stopPropagation();
+                        col.classList.toggle('sub-open');
+                    });
+                });
+            };
+            const openMenu = () => {
+                if (menuOverlay) menuOverlay.classList.add("active");
+                if (menuToggleBtn) menuToggleBtn.classList.add("open"); 
+                if (searchSuggestions) searchSuggestions.classList.remove("show");
+                document.body.style.overflow = "hidden"; 
+            };
+            const closeMenu = () => {
+                if (menuOverlay) menuOverlay.classList.remove("active");
+                if (menuToggleBtn) menuToggleBtn.classList.remove("open"); 
+                if (searchSuggestions) searchSuggestions.classList.remove("show");
+                document.body.style.overflow = ""; 
+                const openAccordions = mobilePlaceholder.querySelectorAll('.is-open, .sub-open');
+                openAccordions.forEach(el => el.classList.remove('is-open', 'sub-open'));
+            };
+            if (sidebarSearchInput) {
+                sidebarSearchInput.addEventListener("click", (event) => {
+                    event.stopPropagation();
+                    if (searchSuggestions) searchSuggestions.classList.add("show");
+                });
+            }
+            if (menuToggleBtn) {
+                menuToggleBtn.addEventListener("click", (event) => {
+                    event.stopPropagation(); 
+                    menuOverlay.classList.contains("active") ? closeMenu() : openMenu();
+                });
+            }
+            if (closeMenuBtnInner) {
+                closeMenuBtnInner.addEventListener("click", closeMenu);
+            }
+            document.addEventListener("click", (event) => {
+                if (!menuOverlay || !menuSidebar) return;
+                if (menuOverlay.classList.contains("active") && !menuSidebar.contains(event.target)) {
+                    closeMenu();
+                    return;
+                }
+                if (searchSuggestions && searchSuggestions.classList.contains("show") && event.target !== sidebarSearchInput) {
+                    searchSuggestions.classList.remove("show");
+                }
+            });
+            window.addEventListener("resize", () => {
+                if (window.innerWidth > 992) closeMenu();
+            });
+            initMobileMenu();
+            });
+    </script>
+</body>
+</html>

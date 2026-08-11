@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <!-- wow.css  -->
+    <!-- slick -->
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <style>
+    .box{
+        width: 200px;
+        height: 100px;
+        background-color: antiquewhite;
+        color: rgb(70, 96, 96);
+    }
+    .container{
+        width: 200px;
+        height: 100px;
+        background-color: antiquewhite;
+        color: red;
+    }
+    .slider-for, .slider-nav{
+        margin: 0 15px;
+    }
+    .card{
+        width: 50px;
+        height: 200px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slick-slider{
+        margin: 0 20px;
+    }
+    </style>
+</head>
+<body>
+    <!-- animate.css -->
+    <!-- <h1 class="animate__animated animate__slideInDown animate__infinite">An animated element</h1> -->
+    <!-- wow.css  -->
+    <div class="box">
+        <h1 class="wow animate__animated animate__backInLeft animate__infinite">An animated element</h1>
+    </div>
+    <div class="box">
+        <h1 class="wow animate__animated animate__slideInDown animate__infinite">An animated element</h1>
+    </div>
+    <div class="box">
+        <h1 class="wow animate__animated animate__slideInDown animate__infinite">An animated element</h1>
+    </div>
+    <div class="box">
+        <h1 class="wow animate__animated animate__slideInDown animate__infinite">An animated element</h1>
+    </div>
+    <div class="box">
+        <h1 class="wow animate__animated animate__slideInDown animate__infinite">An animated element</h1>
+    </div>
+    <div class="box">
+        <h1 class="wow animate__animated animate__slideInDown animate__infinite">An animated element</h1>
+    </div>
+    <script src="wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- slick.css -->
+    <!-- <div class="slider-for">
+        <div class="card">card 1</div>
+        <div class="card">card 2</div>
+        <div class="card">card 3</div>
+        <div class="card">card 4</div>
+        <div class="card">card 5</div>
+    </div>
+    <div class="slider-nav">
+        <div class="card">card 1</div>
+        <div class="card">card 2</div>
+        <div class="card">card 3</div>
+        <div class="card">card 4</div>
+        <div class="card">card 5</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider-for').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+
+            autoplay: true,
+            autoplaySpeed: 1000,
+
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        });
+    });
+  </script> -->
+</body>
+</html>
