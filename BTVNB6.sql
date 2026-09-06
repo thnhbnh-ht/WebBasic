@@ -1,62 +1,70 @@
-create type UserRole as enum ('ADMIN', 'MEMBER');
-create table Users (
-    id serial primary key,
-    email varchar(255) not null unique,
-    matkhau varchar(255) not null,
-    role UserRole not null default 'MEMBER'
+CREATE TABLE Users(
+    id SERIAL PRIMARY KEY,
+    -- Unique Constraint: Mỗi tài khoản chỉ liên kết với 1 email duy nhất
+    email VARCHAR(255) NOT NULL UNIQUE,
+    Upassword VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'MEMBER'
 );
-create table Classes (
-    id serial primary key,
-    ten varchar(255) not null,
-    mota text,
-    sDate date,
-    eDate date,
-    mentorId int references Users(id) on delete set null
+CREATE TABLE Classes(
+    id SERIAL PRIMARY KEY,
+    className VARCHAR(255) NOT NULL,
+    classDescription TEXT,
+    sDate DATE,
+    eDate DATE,
+    mentorId INT REFERENCES Users(id) ON DELETE SET NULL
 );
-create table ClassMembers (
-    id serial primary key,
-    classId int not null references Classes(id) on delete cascade,
-    memberId int not null references Users(id) on delete cascade,
-    joinedAt timestamptz default current_timestamp,
-    constraint uqClassMember unique (classId, memberId)
+CREATE TABLE ClassMembers(
+    id SERIAL PRIMARY KEY, 
+    classId INT NOT NULL REFERENCES Classes(id) ON DELETE CASCADE,
+    memberId INT NOT NULL REFERENCES Users(id) ON DELETE CASCADE,
+    joinedAt TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    -- Unique Constraint: 1 Member không được thêm 2 lần vào cùng 1 Class
+    CONSTRAINT uqClassMember UNIQUE (classId, memberId)
 );
-create table Lessons (
-    id serial primary key,
-    classId int not null references Classes(id) on delete cascade,
-    title varchar(255) not null,
-    content text,
-    "order" int not null,
-    createdBy int not null references Users(id) on delete restrict,
-    constraint uqClassOrder unique (classId, "order")
+CREATE TABLE Lessons(
+    id SERIAL PRIMARY KEY,
+    classId INT NOT NULL REFERENCES Classes(id) ON DELETE CASCADE,
+    title VARCHAR(255) NOT NULL,
+    content TEXT,
+    lessonOrder INT NOT NULL,
+    createdBy INT NOT NULL REFERENCES Users(id) ON DELETE RESTRICT,
+    -- Unique Constraint: Thứ tự bài học trong cùng 1 lớp không được trùng nhau
+    CONSTRAINT uqClassOrder UNIQUE (classId, lessonOrder) 
 );
-create table LessonProgress (
-    id serial primary key,
-    lessonId int not null references Lessons(id) on delete cascade,
-    memberId int not null references Users(id) on delete cascade,
-    completedAt timestamptz default current_timestamp,
-    constraint uqLessonMember unique (lessonId, memberId)
+CREATE TABLE LessonProgress(
+    id SERIAL PRIMARY KEY, 
+    lessonId INT NOT NULL REFERENCES Lessons(id) ON DELETE CASCADE,
+    memberId INT NOT NULL REFERENCES Users(id) ON DELETE CASCADE,
+    completedAt TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    -- Unique Constraint: 1 Member chỉ được đánh dấu hoàn thành bài học 1 lần duy nhất
+    CONSTRAINT uqLessonMember UNIQUE (lessonId, memberId) 
 );
-create table Assignments (
-    id serial primary key,
-    classId int not null references Classes(id) on delete cascade,
-    title varchar(255) not null,
-    mota text,
-    deadline timestamptz,
-    maxScore numeric(5, 2)
+CREATE TABLE Assignments(
+    id SERIAL PRIMARY KEY,
+    classId INT NOT NULL REFERENCES Classes(id) ON DELETE CASCADE,
+    title VARCHAR(255) NOT NULL,
+    assignmentDescription TEXT,
+    deadline TIMESTAMPTZ,
+    maxScore NUMERIC(5, 2)
 );
-create table Submissions (
-    id serial primary key,
-    assignmentId int not null references Assignments(id) on delete cascade,
-    memberId int not null references Users(id) on delete cascade,
-    content text,
-    repoUrl varchar(500),
-    submittedAt timestamptz default current_timestamp,
-    score numeric(5, 2) default null,
-    feedback text default null,
-    reviewedAt timestamptz default null,
-    constraint uqAssignmentMember unique (assignmentId, memberId)
+CREATE TABLE Submissions(
+    id SERIAL PRIMARY KEY,
+    assignmentId INT NOT NULL REFERENCES Assignments(id) ON DELETE CASCADE,
+    memberId INT NOT NULL REFERENCES Users(id) ON DELETE CASCADE,
+    content TEXT,
+    repoUrl VARCHAR(500),
+    submittedAt TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    score NUMERIC(5, 2) DEFAULT NULL,
+    feedback TEXT DEFAULT NULL,
+    reviewedAt TIMESTAMPTZ DEFAULT NULL,
+    -- Unique Constraint: Mỗi Member chỉ nộp 1 bài cho 1 Assignment
+    CONSTRAINT uqAssignmentMember UNIQUE (assignmentId, memberId)
 );
-create index indexLessonClassOrder on Lessons(classId, "order");
-create index indexClassMemberClass on ClassMembers(classId);
-create index indexLessonProgressMember on LessonProgress(memberId);
-create index indexSubmissionsAssignment on Submissions(assignmentId);
+-- Index: Tối ưu hóa API lấy danh sách bài học theo thứ tự
+CREATE INDEX indexLessonClassOrder ON Lessons(classId, lessonOrder);
+-- Index: Tối ưu hóa API lấy danh sách thành viên trong lớp
+CREATE INDEX indexClassMemberClass ON ClassMembers(classId);
+-- Index: Tối ưu hóa API tính toán tiến độ học tập của từng học viên
+CREATE INDEX indexLessonProgressMember ON LessonProgress(memberId);
+-- Index: Tối ưu hóa API lấy danh sách bài nộp để Mentor chấm điểm
+CREATE INDEX indexSubmissionsAssignment ON Submissions(assignmentId);
